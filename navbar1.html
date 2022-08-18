@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="container-fluid mt-3">
+    <h3>1. Navbar With Dropdown + Logo + Search Bar</h3>
+    <p>화면이 줄어드는 경우, 메뉴가 겹치는 걸 방지할려면 lg에서 햄버거 버튼으로 바꾸는게 낫다.</p>
+  </div>
+  <!-- #1 -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://picsum.photos/50/50" alt="Test Logo Image" class="rounded-circle">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registration</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Link</a></li>
+              <li><a class="dropdown-item" href="#">Another link</a></li>
+              <li><a class="dropdown-item" href="#">A third link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+  <div class="container-fluid mt-3">
+    <h3>2. Navbar With Dropdown + Logo + 로그인 후 모습</h3>
+    <p>유저아이콘의 파랑색을 바꿀려고 하는데 잘 안됨. 또한, hover시 css을 이용하여 red로 변경. navbar-nav을 추가하니까 잘됨..</p>
+  </div>
+  <style>
+
+  </style>
+  <!-- #1 -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://picsum.photos/50/50" alt="Test Logo Image" class="rounded-circle">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registration</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Link</a></li>
+              <li><a class="dropdown-item" href="#">Another link</a></li>
+              <li><a class="dropdown-item" href="#">A third link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="navbar-nav dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton1" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-user fa-lg"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#"><i class="fas fa-sliders-h fa-fw me-2"></i> Account</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-cog fa-fw me-2"></i> Settings</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+  <div class="container-fluid border ">
+    <nav class="d-flex flex-wrap justify-content-center align-items-center justify-content-lg-between">
+      <div>
+        <a class="" href="#">
+          <img src="https://picsum.photos/50/50" alt="Test Logo Image" class="rounded-circle">
+        </a>
+      </div>
+      <div class="col-12 col-md-auto ">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+
+        <button class="btn btn-outline-info" type="button">Login</button>
+        <button class="btn btn-info" type="button">Sign-up</button>
+
+      </div>
+  </div>
+  </nav>
+  </div>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <h3>bootstrap 5 dropdown 테스트</h3>
+  <p>필수사항: data-bs-toggle="dropdown" and 하위 ul class="dropdown-menu" and class="dropdown-item"</p>
+  <p>선택사항: a or button class="dropdown-toggle"(화살표 만듬)</p>
+
+  <div class="container">
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="true">
+        Left-aligned but right aligned when large screen
+      </button>
+      <ul class="dropdown-menu dropdown-menu-lg-end">
+        <li><button class="dropdown-item" type="button">Action</button></li>
+        <li><button class="dropdown-item" type="button">Another action</button></li>
+        <li><button class="dropdown-item" type="button">Something else here</button></li>
+      </ul>
+    </div>
+</div>
+
+ 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>참고용: https://mdbootstrap.com/docs/standard/navigation/navbar/</p>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars text-light"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto d-flex flex-row mt-3 mt-lg-0">
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link active" aria-current="page" href="#!">
+            <div>
+              <i class="fas fa-home fa-lg mb-1"></i>
+            </div>
+            Home
+          </a>
+        </li>
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link" href="#!">
+            <div>
+              <i class="far fa-envelope fa-lg mb-1"></i>
+              <span class="badge rounded-pill badge-notification bg-danger">11</span>
+            </div>
+            Link
+          </a>
+        </li>
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link disabled" aria-disabled="true" href="#!">
+            <div>
+              <i class="far fa-envelope fa-lg mb-1"></i>
+              <span class="badge rounded-pill badge-notification bg-warning">11</span>
+            </div>
+            Disabled
+          </a>
+        </li>
+        <li class="nav-item dropdown text-center mx-2 mx-lg-1">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+            aria-expanded="false">
+            <div>
+              <i class="far fa-envelope fa-lg mb-1"></i>
+              <span class="badge rounded-pill badge-notification bg-primary">11</span>
+            </div>
+            Dropdown
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <!-- Right links -->
+      <ul class="navbar-nav ms-auto d-flex flex-row mt-3 mt-lg-0">
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link" href="#!">
+            <div>
+              <i class="fas fa-bell fa-lg mb-1"></i>
+              <span class="badge rounded-pill badge-notification bg-info">11</span>
+            </div>
+            Messages
+          </a>
+        </li>
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link" href="#!">
+            <div>
+              <i class="fas fa-globe-americas fa-lg mb-1"></i>
+              <span class="badge rounded-pill badge-notification bg-success">11</span>
+            </div>
+            News
+          </a>
+        </li>
+      </ul>
+      <!-- Right links -->
+
+      <!-- Search form -->
+      <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
+        <input type="search" class="form-control" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-primary" type="button" data-mdb-ripple-color="dark">
+          Search
+        </button>
+      </form>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+
+</html>
